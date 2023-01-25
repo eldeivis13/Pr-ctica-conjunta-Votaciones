@@ -6,18 +6,23 @@ import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 
 import controlador.ControladorVotaciones;
+import persistencias.RoundedBorder;
+
 import javax.swing.JLabel;
 import javax.swing.JButton;
 import java.awt.Font;
+import java.awt.Color;
+import javax.swing.border.LineBorder;
 
 public class VistaVotaciones extends JFrame {
 
 	private JPanel contentPane;
 	public JButton btnIniciar;
-	public JPanel panelPortada;
+	public JPanel panelPortada, panelVotaciones;
 
 	/**
 	 * Launch the application.
@@ -49,6 +54,10 @@ public class VistaVotaciones extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		panelVotaciones = new JPanel();
+		panelVotaciones.setBounds(0, 0, 1221, 711);
+		contentPane.add(panelVotaciones);
+		
 		panelPortada = new JPanel();
 		panelPortada.setBounds(0, 0, 1221, 711);
 		contentPane.add(panelPortada);
@@ -60,8 +69,10 @@ public class VistaVotaciones extends JFrame {
 		ImageIcon ico = new ImageIcon(img.getImage().getScaledInstance(lblFotoPortada.getWidth(), lblFotoPortada.getHeight(), Image.SCALE_SMOOTH));
 		
 		btnIniciar = new JButton("Ir a las votaciones");
+		btnIniciar.setBackground(new Color(204, 204, 255));
 		btnIniciar.setFont(new Font("Tahoma", Font.BOLD, 16));
-		btnIniciar.setBounds(501, 618, 196, 43);
+		btnIniciar.setBounds(509, 619, 196, 43);
+		btnIniciar.setBorder(new RoundedBorder(10));
 		panelPortada.add(btnIniciar);
 		lblFotoPortada.setIcon(ico);
 		panelPortada.add(lblFotoPortada);

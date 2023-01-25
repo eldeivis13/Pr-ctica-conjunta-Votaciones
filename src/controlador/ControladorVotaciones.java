@@ -12,12 +12,6 @@ public class ControladorVotaciones implements ActionListener{
 	
 	VistaVotaciones vista = new VistaVotaciones();
 	
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
-	
 	public ControladorVotaciones(VistaVotaciones vista) {
 		
 		this.vista = vista;
@@ -53,5 +47,31 @@ public class ControladorVotaciones implements ActionListener{
 				}
 			}
 		}
-
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		if(e.getSource() == this.vista.btnIniciar) {
+			Connection connection = null;
+			
+			try {
+				connection = createConnection();
+				
+				connection.commit();
+			}catch (Exception s) {
+				try {
+					connection.rollback();
+				} catch (SQLException s2) {
+					s2.printStackTrace();
+				}
+				s.printStackTrace();
+			}
+			this.vista.panelPortada.setVisible(false);
+		    this.vista.panelVotaciones.setVisible(true);
+		}
+		
+		
+		
+	}
+	
 }
