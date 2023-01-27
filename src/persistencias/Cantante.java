@@ -1,9 +1,10 @@
 package persistencias;
 
 public class Cantante {
+	private String dni;
 	private String nombre;
 	private int votos;
-	private int andalucia;
+	
 	public Cantante(String nombre) {
 		super();
 		this.nombre = nombre;
