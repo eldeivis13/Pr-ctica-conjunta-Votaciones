@@ -22,13 +22,10 @@ public class Cantante {
 	public void setVotos(int votos) {
 		this.votos = votos;
 	}
+	
 	@Override
 	public String toString() {
 		return "Cantante [nombre=" + nombre + ", votos=" + votos + "]";
-	}
-	
-	public int incrementar() {
-		return votos++;
 	}
 	
 }
