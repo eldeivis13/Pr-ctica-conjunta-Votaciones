@@ -2,15 +2,15 @@ package persistencias;
 
 public class VotosComunidadRango {
 	private String nombreComunidad;
-	private String rangoEdad;
+	private String rango_18_25;
+	private String rango_26_40;
+	private String rango_41_65;
+	private String rango_MAS_66;
 	private String nombreCantante;
 	private int totalVotos;
 	
-	public VotosComunidadRango(String nombreComunidad, String rangoEdad, String nombreCantante, int totalVotos) {
-		this.nombreComunidad = nombreComunidad;
-		this.rangoEdad = rangoEdad;
-		this.nombreCantante = nombreCantante;
-		this.totalVotos = totalVotos;
+	public VotosComunidadRango() {
+		
 	}
 
 	public String getNombreComunidad() {
@@ -21,12 +21,36 @@ public class VotosComunidadRango {
 		this.nombreComunidad = nombreComunidad;
 	}
 
-	public String getRangoEdad() {
-		return rangoEdad;
+	public String getRango_18_25() {
+		return rango_18_25;
 	}
 
-	public void setRangoEdad(String rangoEdad) {
-		this.rangoEdad = rangoEdad;
+	public void setRango_18_25(String rango_18_25) {
+		this.rango_18_25 = rango_18_25;
+	}
+
+	public String getRango_26_40() {
+		return rango_26_40;
+	}
+
+	public void setRango_26_40(String rango_26_40) {
+		this.rango_26_40 = rango_26_40;
+	}
+
+	public String getRango_41_65() {
+		return rango_41_65;
+	}
+
+	public void setRango_41_65(String rango_41_65) {
+		this.rango_41_65 = rango_41_65;
+	}
+
+	public String getRango_MAS_66() {
+		return rango_MAS_66;
+	}
+
+	public void setRango_MAS_66(String rango_MAS_66) {
+		this.rango_MAS_66 = rango_MAS_66;
 	}
 
 	public String getNombreCantante() {
@@ -47,7 +71,8 @@ public class VotosComunidadRango {
 
 	@Override
 	public String toString() {
-		return "Cantante [nombreComunidad=" + nombreComunidad + ", rangoEdad=" + rangoEdad + ", nombreCantante="
-				+ nombreCantante + ", totalVotos=" + totalVotos + "]";
+		return "VotosComunidadRango [nombreComunidad=" + nombreComunidad + ", rango_18_25=" + rango_18_25
+				+ ", rango_26_40=" + rango_26_40 + ", rango_41_65=" + rango_41_65 + ", rango_MAS_66=" + rango_MAS_66
+				+ ", nombreCantante=" + nombreCantante + ", totalVotos=" + totalVotos + "]";
 	}
 }
