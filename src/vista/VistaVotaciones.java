@@ -78,7 +78,7 @@ public class VistaVotaciones extends JFrame {
 		
 		panelLista = new JPanel();
 		panelLista.setBackground(new Color(200, 13, 163));
-		panelLista.setBounds(10, 136, 248, 304);
+		panelLista.setBounds(10, 136, 270, 304);
 		panelVotaciones.add(panelLista);
 		panelLista.setVisible(false);
 		panelLista.setLayout(null);
@@ -86,19 +86,19 @@ public class VistaVotaciones extends JFrame {
 		ltCantantes = new JList();
 		ltCantantes.setBackground(new Color(204, 204, 204));
 		ltCantantes.setFont(new Font("MV Boli", Font.BOLD, 13));
-		ltCantantes.setBounds(10, 24, 228, 270);
+		ltCantantes.setBounds(10, 24, 250, 270);
 		panelLista.add(ltCantantes);
 		
 		btnCerrar = new JButton("X");
 		btnCerrar.setBackground(new Color(255, 0, 0));
 		btnCerrar.setFont(new Font("Tahoma", Font.BOLD, 17));
-		btnCerrar.setBounds(199, 0, 49, 21);
+		btnCerrar.setBounds(221, 0, 49, 21);
 		panelLista.add(btnCerrar);
 		
 		JLabel lblNewLabel = new JLabel("Clasificacion Final");
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setFont(new Font("MV Boli", Font.BOLD, 15));
-		lblNewLabel.setBounds(10, 0, 179, 21);
+		lblNewLabel.setBounds(10, 0, 201, 21);
 		panelLista.add(lblNewLabel);
 		
 		cbFiltros = new JComboBox();
@@ -128,21 +128,21 @@ public class VistaVotaciones extends JFrame {
 		lblVotosC3 = new JLabel("");
 		lblVotosC3.setFont(new Font("MV Boli", Font.BOLD, 15));
 		lblVotosC3.setHorizontalAlignment(SwingConstants.CENTER);
-		lblVotosC3.setBounds(966, 519, 107, 27);
+		lblVotosC3.setBounds(989, 518, 107, 27);
 		lblVotosC3.setBorder(new LineBorder(new Color(0, 0, 0), 4));
 		panelVotaciones.add(lblVotosC3);
 		
 		lblVotosC1 = new JLabel("");
 		lblVotosC1.setHorizontalAlignment(SwingConstants.CENTER);
 		lblVotosC1.setFont(new Font("MV Boli", Font.BOLD, 15));
-		lblVotosC1.setBounds(681, 490, 107, 27);
+		lblVotosC1.setBounds(704, 489, 107, 27);
 		lblVotosC1.setBorder(new LineBorder(new Color(0, 0, 0), 4));
 		panelVotaciones.add(lblVotosC1);
 		
 		lblNombreC1 = new JLabel("");
 		lblNombreC1.setFont(new Font("MV Boli", Font.BOLD, 15));
 		lblNombreC1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNombreC1.setBounds(551, 490, 120, 27);
+		lblNombreC1.setBounds(574, 489, 120, 27);
 		lblNombreC1.setBorder(new LineBorder(new Color(0, 0, 0), 4));
 		panelVotaciones.add(lblNombreC1);
 		
@@ -150,39 +150,39 @@ public class VistaVotaciones extends JFrame {
 		lblNombre3.setBorder(new LineBorder(new Color(0, 0, 0), 4));
 		lblNombre3.setFont(new Font("MV Boli", Font.BOLD, 15));
 		lblNombre3.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNombre3.setBounds(836, 519, 120, 27);
+		lblNombre3.setBounds(859, 518, 120, 27);
 		panelVotaciones.add(lblNombre3);
 		
 		lblNombreC2 = new JLabel("");
 		lblNombreC2.setBorder(new LineBorder(new Color(0, 0, 0), 4));
 		lblNombreC2.setFont(new Font("MV Boli", Font.BOLD, 15));
 		lblNombreC2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNombreC2.setBounds(278, 508, 120, 27);
+		lblNombreC2.setBounds(301, 507, 120, 27);
 		panelVotaciones.add(lblNombreC2);
 		
 		lblVotosC2 = new JLabel("");
 		lblVotosC2.setBorder(new LineBorder(new Color(0, 0, 0), 4));
 		lblVotosC2.setFont(new Font("MV Boli", Font.BOLD, 15));
 		lblVotosC2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblVotosC2.setBounds(408, 508, 107, 27);
+		lblVotosC2.setBounds(431, 507, 107, 27);
 		panelVotaciones.add(lblVotosC2);
 		
 		lblCantante2 = new JLabel("");
 		lblCantante2.setBorder(new LineBorder(new Color(0, 0, 0), 4));
 		lblCantante2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblCantante2.setBounds(278, 175, 237, 253);
+		lblCantante2.setBounds(301, 174, 237, 253);
 		panelVotaciones.add(lblCantante2);
 		
 		lblCantante3 = new JLabel("");
 		lblCantante3.setBorder(new LineBorder(new Color(0, 0, 0), 4));
 		lblCantante3.setHorizontalAlignment(SwingConstants.CENTER);
-		lblCantante3.setBounds(836, 230, 237, 253);
+		lblCantante3.setBounds(859, 229, 237, 253);
 		panelVotaciones.add(lblCantante3);
 		
 		lblCantante1 = new JLabel("");
 		lblCantante1.setBorder(new LineBorder(new Color(0, 0, 0), 4));
 		lblCantante1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblCantante1.setBounds(551, 125, 237, 253);
+		lblCantante1.setBounds(574, 124, 237, 253);
 		panelVotaciones.add(lblCantante1);
 		lblFondoPodio.setIcon(ico3);
 		panelVotaciones.add(lblFondoPodio);
